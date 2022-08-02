@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(58, 54, 54);
+}
+header header input {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  margin-left: 9px;
+  margin-top: 9px;
+}
+header .logo {
+  float: left;
+  color: whitesmoke;
+  font-size: 23px;
+  padding: 14px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: all 2s;
+  background-color: rgb(58, 54, 54);
+}
+header .logo:hover {
+  color: orangered;
+  transform: scale(1.05);
+  transition: all 0.8s;
+}
+header .logo span {
+  transition: all 2s;
+  color: whitesmoke;
+}
+header .logo span:hover {
+  color: orangered;
+}
+header .navbar {
+  background-color: rgb(58, 54, 54);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: whitesmoke;
+  font-size: 20px;
+}
+header .jumbotron {
+  background-image: url(img/wine-g7064bdeb9_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+  border-radius: 0;
+  margin-bottom: 0px;
+}
+header .jumbotron button {
+  background-color: orange;
+}
+header .texto1 {
+  color: whitesmoke;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  text-shadow: 0 0 5px #333;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(58, 54, 54);
+  color: whitesmoke;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-transform: capitalize;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(58, 54, 54);
+  color: whitesmoke;
+  padding: 5;
+  text-transform: capitalize;
+  transition: all 2s;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h2:hover {
+  color: orangered;
+  transform: scale(1.05);
+  transition: all 0.8s;
+}
+h2:hover h2 span {
+  transition: all 2s;
+  color: orangered;
+}
+h2:hover h2 span:hover {
+  color: orangered;
+}
+
+.carousel-inner img {
+  width: 50%;
+  height: 50%;
+}
+
+.carousel-item {
+  width: 40%;
+  height: auto;
+  margin-left: 660px;
+}
+
+.carousel-item img {
+  flex: 0 0 10%;
+  width: 20%;
+  object-fit: cover;
+  scroll-snap-align: center;
+}
+
+.catas {
+  border-radius: 2px solid #000;
+  margin: 10px;
+  border: 10px;
+  transition: all 0.8s;
+}
+
+.cata1 {
+  margin-left: 100px;
+  transition: all 0.8s;
+}
+
+.cata2 {
+  margin-left: 500px;
+  transition: all 0.8s;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  transition: all 0.8s;
+}
+.container:hover .item {
+  border: 2px solid #000;
+  margin: 10px;
+  border: 10px;
+  transition: all 0.8s;
+}
+.container:hover .item .item:hover {
+  transform: scale(1.05);
+  transition: all 0.8s;
+}
+
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(58, 54, 54);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  color: whitesmoke;
+  border: 3px solid whitesmoke;
+  border-radius: 40px;
+  box-shadow: 0 0 5px whitesmoke;
+}
+
+footer {
+  background-color: rgb(58, 54, 54);
+  min-height: 100px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 20px;
+}
+footer footer p {
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: capitalize;
+  color: whitesmoke;
+  margin-bottom: 5px;
+}
+footer footer address {
+  font-size: 20px;
+  color: whitesmoke;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+footer footer nav a {
+  background-color: rgb(58, 54, 54);
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: whitesmoke;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  text-transform: capitalize;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+footer i {
+  font-size: 35px;
+  color: whitesmoke;
+  letter-spacing: 20px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
