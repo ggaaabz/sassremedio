@@ -3,6 +3,7 @@ $color2: rgb(58, 54, 54);
 $color3: whitesmoke;
 $color4: orange;
 $font1: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$shadow: 2px;
 
 *{
     padding: 0;
@@ -71,28 +72,7 @@ header{
     text-shadow: 0 0 5px #333;
 }
 }
-h1{
-    font-size: 30px;
-    text-align: center;
-    background-color: $color2;
-    color: $color3;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 10px;
-    text-transform: capitalize;
-    font-family: $font1;
-}
 
-h2{
-    font-size: 30px;
-    text-align: center;
-    background-color: $color2;
-    color: $color3;
-    padding: 5;
-    text-transform: capitalize;
-    transition: all 2s;
-    font-family: $font1;
-}
 h2:hover{
     color: $color1;
     transform: scale(1.05);
@@ -136,19 +116,19 @@ margin-left: 500px;
 transition: all 0.8s;
 }
 .container:hover{
+transform: scale(1.05);
+transition: all 0.8s;
+}
+    .item{
+    border: 2px solid #000;
+    margin: 10px;
+    border: 10px;
+    transition: all 0.8s;
+    }
+    .item:hover{
     transform: scale(1.05);
     transition: all 0.8s;
-    .item{
-        border: 2px solid #000;
-        margin: 10px;
-        border: 10px;
-        transition: all 0.8s;
-        .item:hover{
-            transform: scale(1.05);
-            transition: all 0.8s;
-            }
     }
-}
 
 .subir{
     height: 40px;
@@ -209,4 +189,77 @@ footer i{
     }
 
 
+    $redes: (
+        twitter: #51aff8,
+        facebook: #2956a3,
+        instagram: #0076b8,
+    );
+    @each $red, $color in $redes {
+        .red--#{$red} {
+            background: $color;
+            &:hover {
+                background: white;
+                .red__nombre {
+                    color: $color;
+                }
+            }
+        }
+    }
 
+    .twitter {
+        color: map-get($redes, twitter);
+    }   
+    .twitter {
+        color: map-get($redes, instagram);
+    }   
+    .twitter {
+        color: map-get($redes, facebook);
+    }   
+    @mixin comprar-button($color2){
+        $shadow: "";
+      
+        @for $i from 1 through 4{
+          $shadow: $shadow + "#{$i}px #{$i}px 0px 2px " + darken($base-color,$i*5) + ",";
+        } 
+      
+        $shadow : str-slice($shadow,0,str-length($shadow)-1);
+        appearance: none;
+        border:none;
+        background: $color2;
+        box-shadow: unquote($shadow);
+      }
+      button{
+        @include comprar-button($color1);
+        font-size:18px;
+        color: $color3;
+        font-family: $font1;
+      }
+      .comprar-btn--redorange{
+        @include button($color1);
+        font-size:18px;
+        color: $color3;
+      }
+
+      %heading {
+        background-color: $color2;
+        color: $color3;
+        font-family: $font1;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
+      h1 {
+        @extend %heading;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      
+      h2 {
+        @extend %heading;
+        font-size: 30px;
+        padding: 5;
+        transition: all 2s;
+      }
+        
