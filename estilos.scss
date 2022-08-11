@@ -86,6 +86,9 @@ h2:hover{
     }
 }
 
+ 
+
+
 .carousel-inner img {
     width: 50%;
     height: 50%;   
@@ -263,3 +266,7 @@ footer i{
         transition: all 2s;
       }
         
+      h3 {
+      @extend %heading;
+      font-size: 15px;
+      }
